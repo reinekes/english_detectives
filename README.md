@@ -2,6 +2,8 @@
 
 A complete browser prototype: an original Sherlock-inspired mystery for learning English through evidence, questions and deduction.
 
+**[Play on GitHub Pages](https://reinekes.github.io/english_detectives/)** · [Source repository](https://github.com/reinekes/english_detectives)
+
 ## Run
 
 ```sh
@@ -31,5 +33,10 @@ Explore 3 locations, inspect 6 clues, question 4 suspects, make 3 deductions, an
 - [Case design — spoilers](docs/CASE_DESIGN.md)
 - [Development and verification log](docs/DEVELOPMENT_LOG.md)
 - [Original artwork provenance](docs/ASSETS.md)
+- [Portfolio case in Markdown (RU)](CASE_BAKER_STREET.md)
 
-The hosting identity and static directory are preserved in `.openai/hosting.json`. New publication is private to the owner.
+## GitHub Pages
+
+Pushes to `main` run `.github/workflows/pages.yml`: JavaScript syntax checks and all game tests must pass before the static `dist/` directory is published. Documentation, tests and the case solution file are retained in the repository; only the playable site is included in the Pages artifact. All local asset paths are relative, so the game works under `/english_detectives/`.
+
+The earlier owner-private Sites deployment is still described by `.openai/hosting.json`. GitHub Pages is a separate public publication requested by the project owner.
